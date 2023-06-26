@@ -10,7 +10,6 @@ sh_test(
     srcs = [
         ":testDepOneLevelTwo.sh"
     ],
-    tags = ["manual"],
     visibility = ["//visibility:public"],
 )
 
