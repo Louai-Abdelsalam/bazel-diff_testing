@@ -39,3 +39,12 @@ sh_test(
     ],
     visibility = ["//visibility:public"],
 )
+
+sh_test(
+    name = "tester_of_external_repos",
+    data = ["@aws_sam//:sam_bin"],
+    srcs = [
+        "tester_of_external_repos.sh",
+    ],
+    visibility = ["//visibility:public"],
+)

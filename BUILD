@@ -6,13 +6,3 @@ java_binary(
     runtime_deps = ["@bazel_diff//jar"],
     visibility = ["//visibility:public"],
 )
-
-genrule(
-    name = "tester_of_external_repos",
-    srcs = ["@aws_sam//:sam_bin"],
-    outs = [
-        "samVersion.txt",
-    ],
-    cmd = "$(location @aws_sam//:sam_bin) --version > $@",
-    visibility = ["//visibility:public"],
-)
