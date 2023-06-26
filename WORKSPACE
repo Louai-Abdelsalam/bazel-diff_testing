@@ -17,10 +17,10 @@ http_archive(
         "./install --install-dir $(pwd)/aws_sam_installation_dir",
         "ln -s aws_sam_installation_dir/current/dist/sam sam_bin",
     ],
-    sha256 = "24aa5893e35ce370b92b730fe163d902d248bdef4e3513eb3810bc6ff91a4efd",
-    # sha256 = "616511d24b422ed92c51b083657af63bc58b52e28c030ee228ecce0881a7a78d",
+    # sha256 = "24aa5893e35ce370b92b730fe163d902d248bdef4e3513eb3810bc6ff91a4efd",
+    sha256 = "616511d24b422ed92c51b083657af63bc58b52e28c030ee228ecce0881a7a78d",
     urls = [
-        "https://github.com/aws/aws-sam-cli/releases/download/v1.73.0/aws-sam-cli-linux-x86_64.zip",
-        # "https://github.com/aws/aws-sam-cli/releases/download/v1.89.0/aws-sam-cli-linux-x86_64.zip"
+        # "https://github.com/aws/aws-sam-cli/releases/download/v1.73.0/aws-sam-cli-linux-x86_64.zip",
+        "https://github.com/aws/aws-sam-cli/releases/download/v1.89.0/aws-sam-cli-linux-x86_64.zip"
     ],
 )
