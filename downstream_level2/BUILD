@@ -8,7 +8,7 @@ genrule(
 sh_test(
     name = "testReverseDepOneLevelTwo",
     data = [
-        "//downstream_level1:testReverseDepTwoLevelOne",
+        "//upstream_level2:testDepOneLevelTwo",
     ],
     srcs = [
         "testReverseDepOneLevelTwo.sh"
